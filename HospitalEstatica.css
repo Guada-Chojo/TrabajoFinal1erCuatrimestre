@@ -1,0 +1,107 @@
+.encabezado {
+  background-color: #0468ff;
+  height: 10%;
+  padding: 2%;
+  color: white;
+}
+
+.bienvenida{
+  color:white;
+  padding: 20%;
+  font-family: futura-pt-bold, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  background: linear-gradient(rgba(131, 131, 131, 0.473), rgba(131, 131, 131, 0.473)), url("./imagenes/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-general {
+  padding: 5%;
+  height: 5%;
+  width: 100%;
+}
+
+.descripcion { 
+  font-size: medium;
+  text-align: justify;
+}
+
+.lista {
+  padding-top: 2%;
+}
+
+.punto {
+  padding: 1% 0%;
+}
+
+.punto img {
+  padding-right: 2%;
+}
+
+.encabezado p {
+  color: gold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contenido {
+  margin: 0% 20% 5% 20%;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contenido img {
+  width: 800px;
+  height: 450px;
+
+}
+
+.item-fomulario {
+  padding: 10px 20px;
+}
+
+.item-fomulario label {
+  margin-right: 10px;
+  min-width: 135px;
+}
+
+.desc-carousel {
+  padding: 5%;
+}
+
+.boton-turno {
+  margin-bottom: 5%;
+}
+
+.mensaje-error {
+  color: red;
+}
+
+.contenido-tabla {
+  padding: 20px 10px;
+}
+
+.titulo-select {
+  padding: 5%;
+}
+
+.select {
+  padding: 5%;
+}
+
+.boton-agregar {
+  padding: 5%;
+}
+
+.tarea-asistida {
+  color: orangered;
+}
+
+.contenido-tabla {
+  padding: 5% 5% 1% 5%;
+}
+

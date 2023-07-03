@@ -1,0 +1,150 @@
+<html>
+
+<head>
+  <title>Comprar Moto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./HospitalEstatica.js"></script>
+  <link rel="stylesheet" href="./HospitalEstatica.css" />
+</head>
+
+<body>
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-column align-items-flex-start encabezado">
+      <!-- aqui va el encabezado -->
+      <h4>Hospital Princeton-Plainsboro</h4>
+    </div>
+    <div class="bienvenida">
+      <h1>Bienvenidos al sitio web oficial del Hospital General Princeton-Plainsboro</h1>
+    </div>
+    <div class="d-flex flex-wrap info-general">
+      <div class="descripcion">
+        <p>El Hospital Princeton-Plainsboro es una institución líder en la prestación de atención médica de vanguardia
+          y de excelencia. Situado en una ubicación privilegiada, nuestro hospital se enorgullece de brindar una
+          atención integral y compasiva a nuestros pacientes.
+          Nuestro equipo está compuesto por algunos de los mejores médicos, especialistas y profesionales de la salud en
+          sus respectivos campos. Estamos comprometidos con el cuidado personalizado y nos esforzamos por brindar un
+          enfoque holístico hacia la salud y el bienestar de nuestros pacientes.</p>
+      </div>
+      <div class="d-flex flex-wrap align-content-around justify-content-evenly lista">
+        <div class="d-flex flex-row punto">
+          <img src="./imagenes/Institucion.png" alt="Institucion">
+          <p class="d-flex flex-wrap align-items-center">Contamos con instalaciones de última generación y tecnología
+            médica avanzada para asegurarnos de que nuestros
+            pacientes reciban la atención más precisa y efectiva. Nuestras salas de operaciones están equipadas con
+            equipos de vanguardia y nuestras áreas de atención ambulatoria están diseñadas para brindar comodidad y
+            conveniencia a nuestros pacientes.</p>
+        </div>
+        <div class="d-flex flex-row punto">
+          <img src="./imagenes/Especialistas.png" alt="Especialistas">
+          <p class="d-flex flex-wrap align-items-center">En el Hospital Princeton-Plainsboro, nos enorgullece nuestra
+            amplia gama de especialidades médicas. Desde la
+            medicina interna y la cirugía hasta la oncología y la neurología, nuestros expertos están capacitados para
+            abordar una variedad de condiciones médicas complejas.</p>
+        </div>
+        <div class="d-flex flex-row punto">
+          <img src="./imagenes/Investigacion Cientifica.png" alt="Investigacion">
+          <p class="d-flex flex-wrap align-items-center">Además de nuestra atención clínica excepcional, también nos
+            dedicamos a la investigación médica y al avance
+            científico. Nuestros médicos y científicos están constantemente involucrados en investigaciones innovadoras
+            y clínicos de vanguardia, lo que nos permite ofrecer a nuestros pacientes los últimos avances en el campo de
+            la medicina.</p>
+        </div>
+      </div>
+    </div>
+    <!-- aqui va el contenido -->
+    <div class="d-flex flex-column contenido">
+      <div>
+        <!-- aqui va el slider de imagenes -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagenes/1.jpg" class="d-block w-100" alt="Atencion medica">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/2.jpg" class="d-block w-100" alt="Analisis">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/3.jpg" class="d-block w-100" alt="Instalaciones">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="desc-carousel">
+          <p>En el Hospital Princeton-Plainsboro, nuestra misión es proporcionar una atención médica de la más alta calidad, promoviendo la curación y el bienestar de nuestros pacientes. Valoramos la confianza que nuestros pacientes depositan en nosotros y nos esforzamos por superar sus expectativas en cada visita.
+            Nos complace darle la bienvenida al Hospital Princeton-Plainsboro y esperamos poder brindarle una atención excepcional y compasiva durante su estadía con nosotros.</p>
+        </div>
+      </div>
+        
+    <!-- Button trigger modal -->
+      <div class="boton-turno">
+        <button type="button" class="d-grid gap-2 col-6 mx-auto btn btn-primary turno" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          Reserve su turno ahora
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <!-- aqui va el formulario -->
+                <div>
+                  <div class="d-flex flex-row align-items-center item-fomulario">
+                    <label class="form-label">Nombre:</label>
+                    <div class="flex-grow-1">
+                      <input id="nombre" class="form-control" type="text" />
+                      <small id="error-nombre" class="mensaje-error"></small>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center item-fomulario">
+                    <label class="form-label">Email:</label>
+                    <div class="flex-grow-1">
+                      <input id="email" class="form-control" type="email" />
+                      <small id="error-email" class="mensaje-error"></small>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center item-fomulario">
+                    <label class="form-label">Recibir novedades:</label>
+                    <div class="flex-grow-1">
+                      <input class="form-check-input" type="checkbox" value="" id="notificaciones" checked>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <a href="./ListaTareasTurnos.html" id="enviar-btn" type="button"
+                    class="btn btn-primary btn-outline-success">Listo</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

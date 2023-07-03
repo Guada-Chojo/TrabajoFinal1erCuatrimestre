@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <title>Todo-List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./ListaTareasTurnos.js"></script>
+  <link rel="stylesheet" href="./HospitalEstatica.css" />
+</head>
+
+<body>
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-column align-items-center encabezado">
+      <!-- aqui va el encabezado -->
+      <h1>Hospital Princeton-Plainsboro</h1>
+    </div>
+    <div class="d-flex flex-wrap">
+      <!-- aqui va el contenido -->
+      <div class="d-flex flex-column lista-tareas">
+        <div class="contenido-tabla">
+          <h3>Mis turnos:</h3>
+        </div>
+        <div class="contenido-tabla">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Doctor</th>
+                <th>Obra social</th>
+                <th>Día</th>
+                <th>Horario</th>
+                <th>Asistencia</th>
+                <th></th>
+                <th>Accion</th>
+              </tr>
+            </thead>
+            <tbody id="tbody" class="table-group-divider">
+
+            </tbody>
+          </table>
+        </div>           
+        </div>
+        <div class="d-flex flex-wrap botonera">
+          <fieldset>
+            <div class="d-flex flex-column item-fomulario">
+              <div class="titulo-select">
+              <h4>Nuevo turno</h4>
+              </div>
+              <div class="flex-grow-1 select">
+                <select id="select-doctor" class="form-select" aria-label="Default select example">
+                  <option selected>Doctor</option>
+                  <option>Dra. Lisa Cuddy</option>
+                  <option>Dr. Jaime Wilson</option>
+                  <option>Dr. Roberto Carrera</option>
+                </select>
+              </div>
+              <div class="flex-grow-1 select">
+                <select id="select-obra" class="form-select" aria-label="Default select example">
+                  <option selected>Obra social</option>
+                  <option>OSDE</option>
+                  <option>IOMA</option>
+                  <option>PAMI</option>
+                  <option>Ninguna</option>
+                </select>
+              </div>
+              <div class="flex-grow-1 select">
+                <select id="select-dia" class="form-select" aria-label="Default select example">
+                  <option selected>Día</option>
+                  <option>Lunes</option>
+                  <option>Martes</option>
+                  <option>Jueves</option>
+                </select>
+              </div>
+              <div class="flex-grow-1 select">
+                <select id="select-horario" class="form-select" aria-label="Default select example">
+                  <option selected>Horario</option>
+                  <option>8:00 am</option>
+                  <option>9:00 am</option>
+                  <option>10:00 am</option>
+                  <option>11:00 am</option>
+                  <option>12:00 pm</option>
+                  <option>13:00 pm</option>
+                  <option>14:00 pm</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="d-flex justify-content-end boton-agregar">
+          <button id="agregarTarea" type="button" class="btn btn-outline-success">Agregar Tarea</button>
+          </div>
+      </div>
+    </div>
+        
+      </div>
+    </div>
+  </div> 
+    
+
+
+
+</body>
+
+</html>
